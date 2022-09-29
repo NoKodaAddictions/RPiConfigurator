@@ -1,0 +1,27 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="File Server, NoKodaAddictions, NoKoda">
+		<meta name="author" content="NoKoda, NoKodaAddictions">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='server.css') }}">
+		<title>Error {{ status }}</title>
+	</head>
+	<body>
+		<div class="box-outer">
+			<h2>Error {{ status }}</h2>
+				<div class="box-inner">
+				<p>{{ error }}</p>
+				<a class="mb" href='/reset/'>Go Home</a>
+			</div>
+		</div>
+
+		<div class="footer">
+			<span>2022 NoKodaAddictions</span>
+			<br>
+			<span>Version: {{ version }}</span>
+		</div>
+	</body>
+</html>

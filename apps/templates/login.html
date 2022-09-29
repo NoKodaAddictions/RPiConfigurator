@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="File Server, NoKodaAddictions, NoKoda">
+		<meta name="author" content="NoKoda, NoKodaAddictions">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='server.css') }}">
+		<title>Log In</title>
+	</head>
+	<body>
+		<div class="box-outer">
+			{% if current_user.is_authenticated %}
+				<meta http-equiv="redirect" content="0;/index/"/>
+			{% else %}
+				<h2>Log In</h2>
+				<div class="box-inner">
+					<p>{{ error }}</p>
+					<form action="/login/" method="POST">
+						<span>Username</span></td>
+						<input type="text" name="username" required>
+						<br>
+						<span>Password</span></td>
+						<input type="text" name="password" required>
+						<br><br>
+						<input class="fb" type="submit" value="Log In">
+						
+					</form>
+				</div>
+			{% endif %}
+		</div>
+	<div class="footer">
+		<span>2022 NoKodaAddictions</span>
+		<br>
+		<span>Version: {{ version }}</span>
+	</div>
+	</body>
+</html>

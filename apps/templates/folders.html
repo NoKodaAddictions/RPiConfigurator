@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="File Server, NoKodaAddictions, NoKoda">
+		<meta name="author" content="NoKoda, NoKodaAddictions">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='server.css') }}">
+		<title>{{ directory }}</title>
+	</head>
+	<body>
+		<div class="box-outer">
+			<div class="header">
+				<h2>Raspberry Pi File Server</h2>
+				<p>Showing Directory: '{{ directory }}'</p>
+				<a class="mb" href='/previous/'>Previous Directory: {{ prev_path }}</a>
+				<a class="mb" href='/index/folders/'>Folders</a>
+				<a class="mb" href='/index/files/'>Files</a>
+				<!-- <form class="mb" action="/upload/" method="POST" enctype="multipart/form-data">
+					<input type="file" name="file">
+					<input type="submit" value="Upload">
+				</form> -->
+				<br><br>
+			</div>
+			<div class="box-inner" style="text-align:left;">
+
+				<h2>Folders</h2>
+				<hr size="10" color="#00aacc">
+				{% for folder in folders %}
+					{% if folder[1] == True %}
+							<hr>
+							<h4>{{ folder[0] }}</h4>
+							<a class="fb" href='/next/{{ folder[0] }}'>Open Folder</a>
+							<br><br>
+						</table>
+					{% else %}
+						<hr>
+						<h4>{{ folder[0] }} [LOCKED]</h4>
+						<br><br>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+
+		<div class="footer">
+			<span>2022 NoKodaAddictions</span>
+			<br>
+			<span>Version: {{ version }}</span>
+		</div>
+	</body>
+</html>

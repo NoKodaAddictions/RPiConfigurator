@@ -1,0 +1,16 @@
+{
+    "INFO":{
+        "name":"Raspberry Pi",
+        "version":"RPi1.0 | UI1.0"
+    },
+
+    "USER":{
+        "username":"raspberry",
+        "pass":"85b42e1702877c851eb7412fe958c8fb447c3207b4798fadab42ea8539046ce1"
+    },
+
+    "NETWORK":{
+        "host":"",
+        "port":"8080"
+    }
+}

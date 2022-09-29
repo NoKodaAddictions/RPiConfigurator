@@ -1,0 +1,20 @@
+/* 
+2022 NoKodaAddictions
+*/
+
+.fb{
+    padding:2px 10px;
+    background-color: #252629;
+    color:white;
+    text-decoration: none;
+    border:2px solid white;
+}
+
+.fb:hover{
+    transform: 5ms;
+    border:2px solid #00ff00;
+}
+
+.fb:active{
+    border:2px solid #00aacc;
+}
