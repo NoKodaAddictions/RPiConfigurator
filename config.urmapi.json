@@ -36,8 +36,8 @@
             "apps/templates/files.html":"here",
             "apps/templates/folders.html":"here",
             "apps/templates/login.html":"here",
-            "installer/rc.local":"/etc/",
-            "installer/sync.desktop":"/etc/xdg/autostart/"
+            "rc.local":"/etc/",
+            "sync.desktop":"/etc/xdg/autostart/"
         },
         "delete":{
         }

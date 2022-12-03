@@ -14,7 +14,7 @@ sudo apt-get install python3-pip3
 
 echo Installing Packages and Dependencies...
 sudo apt-get install net-tools, git, ntp, ntpdate
-sudo python3 -m pip install trapi flask flask-login requests
+sudo python3 -m pip install trapi flask flask-login requests, urmapi
 
 echo Installing Files via URM-API...
 python3 installer.py
