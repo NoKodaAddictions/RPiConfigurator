@@ -13,8 +13,8 @@
 # https://nokodaaddictions.github.io/
 # 2022 NoKodaAddictions
 
-python3 /home/pi/RPiC/apps/sync.py
-python3 /home/pi/RPiC/apps/server.py
-python3 /home/pi/RPiC/updater.py
+python3 /home/pi/RPiConfigurator/apps/sync.py
+python3 /home/pi/RPiConfigurator/apps/server.py
+python3 /home/pi/RPiConfigurator/updater.py
 
 exit 0

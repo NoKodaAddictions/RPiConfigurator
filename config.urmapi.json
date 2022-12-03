@@ -2,7 +2,7 @@
     "HEAD":{
         "package":{
             "name":"RPiConfigurator",
-            "version":"1.0",
+            "version":"1.0.1",
             "description":"Proprietary installer service for Raspberry Pi",
             "license":"MIT",
             "authors":["NoKodaAddictions"],
