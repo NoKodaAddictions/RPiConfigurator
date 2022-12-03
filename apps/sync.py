@@ -1,16 +1,7 @@
-import trapi
-import os
+from subprocess import call
 
-t = trapi.API(trapi.timezones.AMERICA.NEW_YORK)
-t.update()
+call('sudo service ntp stop', shell=True)
+call('sudo ntpdate 0.pool.ntp.org', shell=True)
+call('sudo service ntp start', shell=True)
 
-os.system(f"""
-sudo timedatectl set-ntp false
-sudo timedatectl set-time {t.date}
-sudo timedatectl set-time {t.time.split(".")[0]}
-sudo timedatectl set-ntp true
-
-echo Updated Time
-
-sudo timedatectl status
-""")
+print("Time Updated.")

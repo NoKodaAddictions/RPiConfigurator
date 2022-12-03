@@ -1,0 +1,3 @@
+[Desktop Entry]
+Name=sync.py
+Exec=/usr/bin/python3 /home/pi/RPiConfigurator/sync.py

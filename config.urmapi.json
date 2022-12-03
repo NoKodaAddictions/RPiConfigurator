@@ -1,0 +1,45 @@
+{
+    "HEAD":{
+        "package":{
+            "name":"RPiConfigurator",
+            "version":"1.0",
+            "description":"Proprietary installer service for Raspberry Pi",
+            "license":"MIT",
+            "authors":["NoKodaAddictions"],
+            "package_url":"https://raw.githubusercontent.com/NoKodaAddictions/RPiConfigurator/master/",
+            "os_support":["posix","linux"],
+            "license_description":null,
+            "license_url":null,
+            "keywords":["Raspberry Pi, Pi, Raspberry, Northwest Notes, Northwest, NoKodaAddictions, NoKoda"],
+            "install_message":"Installing Raspberry Pi Configurator. Part of the Northwest Notes project.",
+            "vendor_name":"NoKodaAddictions",
+            "vendor_email":"nokodaaddictions@gmail.com",
+            "vendor_phone":null,
+            "start_file_after_install":null,
+            "deprecated":false
+        },
+        "config":{
+            "version":"1.2"
+        }
+    },
+    "CONTENT":{
+        "install":{
+            "installer.sh":"here",
+            "installer.py":"here",
+            "updater.py":"here",
+            "apps/server.py":"here",
+            "apps/sync.py":"here",
+            "apps/config/server.config.json":"here",
+            "apps/static/main.css":"here",
+            "apps/static/server.css":"here",
+            "apps/templates/500.html":"here",
+            "apps/templates/files.html":"here",
+            "apps/templates/folders.html":"here",
+            "apps/templates/login.html":"here",
+            "installer/rc.local":"/etc/",
+            "installer/sync.desktop":"/etc/xdg/autostart/"
+        },
+        "delete":{
+        }
+    } 
+}
